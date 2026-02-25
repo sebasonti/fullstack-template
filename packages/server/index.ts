@@ -1,12 +1,12 @@
-import { Hono } from "hono";
+import { Hono } from 'hono';
 
 const app = new Hono();
-app.get("/", (c) => {
+app.get('/', (c) => {
   console.log(process.env.CLAUDE_API_KEY);
-  return c.json({ message: "Hello Bun!!!" });
+  return c.json({ message: 'Hello Bun!!!' });
 });
 
-app.get("/api/hello", (c) => c.json({ message: "Hello Bun from Hono!" }));
+app.get('/api/hello', (c) => c.json({ message: 'Hello Bun from Hono!' }));
 
 export default {
   port: 3001,
