@@ -1,15 +1,14 @@
 # server
 
-To install dependencies:
+Hono backend running on Bun, served on port `3000`.
+
+## Development
 
 ```bash
-bun install
+bun run dev
 ```
 
-To run:
+## Scripts
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.9. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+- `dev` — start with hot reload
+- `start` — start without hot reload
